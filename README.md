@@ -184,5 +184,3 @@ Required repository secrets (set these in the GitHub repository Settings → Sec
 Notes & tips
 - The workflow installs `aws-sam-cli` via pip on the runner. If you prefer a different installation method, update the workflow.
 - For stronger security, consider using GitHub OIDC and an IAM role instead of long-lived secrets.
-
-If you'd like, I can also add a GitHub Actions job that runs automated tests or static checks before deploying.
