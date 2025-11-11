@@ -147,5 +147,6 @@ Notes & tips
 If you want to reach out, here's contact information:
 
 LinkedIn: https://www.linkedin.com/in/bobbydevarapu/
+
 Email: bobbyd9676@gmail.com
 
