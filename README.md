@@ -42,50 +42,6 @@ Whenever a receipt (PDF/JPG/PNG) is uploaded to an Amazon S3 bucket, an AWS Lamb
 
 Manual entry of expense receipts is **time-consuming and error-prone**.  
 Organizations and individuals often struggle to:
-# 🧾 Automated Receipt Processing System using AWS Textract, Lambda, and DynamoDB
-
-A **serverless cloud-based automation system** that extracts, stores, and emails key information (vendor, date, total, items) from digital or scanned receipts using AWS AI services.
-
----
-
-## 🚀 Project Overview
-
-This project automates manual receipt data entry using **AWS serverless architecture**.  
-Whenever a receipt (PDF/JPG/PNG) is uploaded to an Amazon S3 bucket, an AWS Lambda function is triggered to:
-1. Extract structured information using **Amazon Textract (AnalyzeExpense)**  
-2. Store extracted details in **DynamoDB**  
-3. Send a formatted summary email using **Amazon SES**
-
----
-
-## 🧩 Architecture Diagram
-
-![Architecture Diagram](architecture-diagram.png)
-
-**Services Used:**
-- **Amazon S3** – stores uploaded receipts  
-- **AWS Lambda** – processes and orchestrates actions  
-- **Amazon Textract** – extracts structured data from receipts  
-- **Amazon DynamoDB** – stores processed receipt details  
-- **Amazon SES** – sends email notifications  
-
----
-
-## ⚙️ Features
-
-- Automatically extracts **vendor name, date, total, and items**
-- Handles both **PDFs and image files**
-- Stores structured output in DynamoDB
-- Sends **email notifications** with extracted summary
-- **Serverless architecture** (no servers to manage)
-- Scalable and cost-efficient (works within AWS Free Tier)
-
----
-
-## 🧠 Problem Statement
-
-Manual entry of expense receipts is **time-consuming and error-prone**.  
-Organizations and individuals often struggle to:
 - Track expenses across hundreds of receipts  
 - Consolidate totals for reimbursements or tax filings  
 - Store and organize receipts digitally
@@ -184,3 +140,12 @@ Required repository secrets (set these in the GitHub repository Settings → Sec
 Notes & tips
 - The workflow installs `aws-sam-cli` via pip on the runner. If you prefer a different installation method, update the workflow.
 - For stronger security, consider using GitHub OIDC and an IAM role instead of long-lived secrets.
+
+
+## Contact
+
+If you want to reach out, here's contact information:
+
+LinkedIn: https://www.linkedin.com/in/bobbydevarapu/
+Email: bobbyd9676@gmail.com
+
