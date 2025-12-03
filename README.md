@@ -133,9 +133,10 @@ What the workflow does
 Required repository secrets (set these in the GitHub repository Settings → Secrets & variables → Actions):
 - `AWS_ACCESS_KEY_ID` — IAM user access key with permission to create/update CloudFormation stacks, IAM roles, DynamoDB, Textract, SES, S3.
 - `AWS_SECRET_ACCESS_KEY` — The IAM user's secret key.
-- `AWS_REGION` — AWS region, e.g. `us-east-1`.
 - `SES_SENDER_EMAIL` — Verified SES sender email (used as CloudFormation parameter).
 - `SES_RECIPIENT_EMAIL` — Recipient email for notifications (also must be verified in SES if account is in sandbox).
+
+The workflow deploys to the `us-east-1` region by default. To deploy to a different region, modify the `aws-region` value in `.github/workflows/deploy-sam.yml`.
 
 Notes & tips
 - The workflow installs `aws-sam-cli` via pip on the runner. If you prefer a different installation method, update the workflow.
